@@ -1,0 +1,110 @@
+ion-header {
+    background-color: #f8f9fa; 
+  
+    ion-toolbar {
+      --background: #4caf50; 
+      ion-title {
+        color: white; 
+        font-weight: bold;
+        font-size: 1.6rem; 
+      }
+  
+      ion-buttons {
+        ion-back-button {
+          color: #ffffff; 
+        ion-button {
+          ion-icon {
+            font-size: 1.5rem; 
+            color: rgb(255, 255, 255); 
+          }
+        }
+      }
+    }
+  }
+  }
+  
+  ion-content {
+    background-color: #ffffff; 
+    padding: 15px; 
+  
+    ion-card {
+      border-radius: 12px; 
+      box-shadow: 0px 6px 12px rgba(152, 152, 152, 0.1); 
+      padding: 20px; 
+      background-color: rgb(255, 255, 255);
+
+      ion-card-title{
+        color: #000000;
+  
+      ion-card-content {
+        padding: 0;
+  
+        ion-grid {
+          ion-row {
+            align-items: center; 
+  
+            ion-col {
+              h2 {
+                font-size: 1.6rem; 
+                font-weight: 700; 
+                color: #000000; 
+                margin: 0 0 10px 0; 
+              }
+  
+              ion-chip {
+                --background: #000000; 
+                --color: rgb(255, 255, 255); 
+                margin-right: 5px; 
+              }
+  
+              ion-list {
+                margin-top: 10px;
+  
+                ion-item {
+                  --background: #000000; 
+                  --color: #000000; 
+                  border-radius: 8px; 
+                  margin-bottom: 5px; 
+                }
+              }
+            }
+  
+            swiper-container {
+              width: 10px; 
+              height: 10px;
+              object-fit: contain; 
+              border-radius: 50%; 
+            }
+          }
+        }
+
+  
+        ion-card-subtitle {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.2rem; 
+          color: #000000;
+          margin-top: 10px; 
+        }
+      }
+    }
+  }
+
+  .swiper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-image {
+    height: 250px;
+    object-fit: contain;
+  }
+} 
