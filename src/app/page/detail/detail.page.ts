@@ -32,7 +32,7 @@ export class DetailPage implements OnInit, AfterViewInit {
       this.loadPokemonDetails(decodeURIComponent(url));
     } else {
       console.error('URL parameter is missing');
-      this.navCtrl.navigateBack('/home'); // Optional navigation if URL is missing
+      this.navCtrl.navigateBack('/home'); 
     }
     this.loadFavorites();
   }
