@@ -37,19 +37,6 @@ export class DetailPage implements OnInit, AfterViewInit {
     this.loadFavorites();
   }
 
-  ngAfterViewInit() {
-    const swiper = new Swiper('.swiper-container', {
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  }
-
   loadPokemonDetails(url: string) {
     this.pokemonService.getPokemonDetails(url).subscribe((response: any) => {
       this.pokemon = response;
@@ -96,4 +83,21 @@ export class DetailPage implements OnInit, AfterViewInit {
     await this.storage.set('favorites', this.favorites);
     this.checkIfFavorite(); 
   }
+
+  ngAfterViewInit() {
+    const swiper = new Swiper('.swiper-container', {
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  }
 }
+
+
+
+
